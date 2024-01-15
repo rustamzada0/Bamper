@@ -1,0 +1,105 @@
+@media (min-width: 360px) and (max-width: 767px) {
+    header {
+        height: 64vh;
+    }
+    .search_and_select {
+        width: 100%;
+    }
+    .search_and_select ,.header_search_input {
+        width: 90%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .visible {
+        display: inline;
+        text-align: center;
+    }
+    .header_main_text_h1 {
+        font-size: 32px;
+        width: 97%;
+    }
+    .header_main_text_p {
+        font-size: 16px;
+    }
+    .shadow-container {
+        margin-top: 159px;
+        max-width: 90%;
+    }
+    .main-text , .main-next, .main-next2 {
+        padding: 20px;
+        margin-top: -40px;
+    }
+    .car-png{
+        width: 100% !important;
+        padding: 20px;
+    }
+    .hidden {
+        display: none !important;
+    }
+    .filter_model, .filter_type {
+        margin: 0;
+    }
+    .filters {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .filter-item {
+        margin-bottom: 10px;
+    }
+    #navbar {
+        position: fixed;
+        background-color: rgb(67,147,234) !important;
+    }
+    .header-inner {
+        padding-top: 120px !important;
+    }
+    .header_search_input {
+        padding-right: 20px;
+    }
+    .search-icon {
+        width: 35px !important;
+    }
+    .img-div{
+        padding: 40px 0;
+        
+    }
+    .contact-name-input {
+        width: 90%;
+    }
+    .contact-name-textarea {
+        width: 90%;
+    }
+    .contact-btn {
+        width: 90%;
+    }
+
+    .car-logo-img{
+        margin-top: 125px;
+    }
+
+    .mark-model-name{
+        margin-top: 35px;
+    }
+
+    .main{
+        margin-top: 55px;
+    }
+    .search-icon {
+        width: 20px !important;
+    }
+
+    .car-info{
+        padding: 30px !important;
+    }
+
+    .create-request{
+        width: 70% !important;
+    }
+
+    
+
+    
+}
+
+/* @media (min-width: 768px) and (max-width: 841px) {} */

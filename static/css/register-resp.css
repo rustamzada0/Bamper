@@ -1,0 +1,61 @@
+@media (min-width: 320px) and (max-width: 767px) {
+    .logininput {
+      padding-left: 0px !important; 
+      padding-top: 0px !important;
+    }
+    .email-input {
+        width: 100% !important;
+    }
+    .register{
+        width: 100% !important;
+    }
+    .remember-me-or-forget-password{
+        width: 100% !important;
+    }
+    .reg-login-form {
+        padding-top: 20px;
+    }
+}
+
+
+@media (min-width: 766px) and (max-width: 855px) {
+    .logininput {      
+        padding-left: 0px !important; 
+      }
+
+    .email-input {
+        width: 100% !important;
+    }
+
+    .register{
+        width: 100% !important;
+    }
+
+    .remember-me-or-forget-password{
+        width: 100% !important;
+    }
+    .reg-login-form {
+        padding-top: 20px;
+    }
+}
+
+@media (min-width: 857px) and (max-width:1024px) {
+    .logininput {      
+        padding-left: 0px !important; 
+      }
+
+    .email-input {
+        width: 100% !important;
+    }
+
+    .register{
+        width: 100% !important;
+    }
+
+    .remember-me-or-forget-password{
+        width: 100% !important;
+    }
+    .reg-login-form {
+        padding-top: 20px;
+    }
+}

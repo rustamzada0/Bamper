@@ -1,0 +1,222 @@
+.main-section {
+    margin-top: 100px;
+    width: 100%;
+    padding-bottom: 100px;
+    /* height: 120vh; */
+}
+
+.main-grid-container {
+    padding-top: 100px;
+    max-width: 60%;
+    /* margin-top: 100px; */
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.main-left-container {
+    width: 400px;
+    text-align: start;
+    align-items: end;
+}
+
+.main_right_container h2 {
+    font-size: 58px;
+}
+
+.main_right_container p {
+    margin-top: 8px;
+}
+
+.main_right_container p span {
+    font-weight: 700;
+}
+
+.main-table {
+    width: 90%;
+    /* height: 500px; */
+    border: 1px solid var(--grey);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.main-table td {
+    padding: 5px;
+    border: 1px solid var(--grey);
+    background-color: var(--white);
+    text-align: start;
+}
+
+table td span {
+    font-weight: 700;
+}
+
+
+.car-logo-img{
+    display: flex;
+    justify-content: end;
+    padding-right: 40px !important;
+}
+
+.ban-main{
+    display: flex;
+    padding: 27px;
+    width: 105%;
+    background-color: #f2f7ff;
+    color: #000;
+    border: 0;
+    border-radius: 12px;
+    height: 128px;
+    overflow: hidden;
+    text-decoration: none;
+    transition: transform
+    
+}
+
+.ban-h3{
+    color: #000;
+    font-size: 21px;
+    font-weight: 700;
+    width: max-content;
+}
+
+
+.ban-img{
+    width: 150%;
+    margin-top: -69px;
+    margin-left: 18px;
+}
+
+.interyer-img{
+    width: 103%;
+    margin-top: -8px;
+    margin-right: -49px
+}
+
+.motor-img{
+    width: 126%;
+    margin-top: -11px;
+    
+}
+
+
+
+.ban-down{
+    background: none !important;
+    border: none !important;
+    color: #3087e5 !important;
+    margin-top: -115px !important;
+    padding-left: 27px !important;
+    outline: none !important;
+    
+}
+
+
+.bam-div-img{
+    text-align: end;
+}
+
+
+.menu{
+    width: 100% !important;
+    background-color: #f2f7ff !important;
+    border: 1px solid  #f2f7ff !important;
+}
+
+.container-fluid{
+    padding: 70px !important;
+    margin-top: -70px !important;
+}
+
+
+.down-div{
+    margin-top: -55px;
+}
+
+
+
+
+.animation-div:hover {
+   margin-top: -3px;
+   transition: 0.5s;
+   cursor: pointer;
+}
+
+
+.navbar-nav .nav-link{
+    color: #fff;
+}
+
+
+
+.dropend .dropdown-toggle{
+    color: #3087e5 ;
+    margin-left: 1em;
+    text-decoration: none;
+    padding: 27px;
+    
+}
+  
+
+.dropdown .dropdown-menu{
+    display: none;
+    background-color: #f2f7ff;
+    width: 106%;
+    border: none;
+    margin-top: 10px !important;
+}
+ 
+
+.create-request{
+    border: none;
+    outline: none !important;
+    background-color: rgb(73, 133, 222);
+    color: white;
+    font-family: sans-serif;
+    width: 29%;
+    padding: 9px;
+    border-radius: 8px;
+    font-size: 21px;
+}
+
+.create-request:hover{
+    background-color: white;
+    border: 1px solid  rgb(73, 133, 222);
+    color:  rgb(73, 133, 222);
+    transition: 0.5s;
+
+
+}
+
+.request-main{
+    padding-left: 70px !important;
+    padding-top: 30px !important;
+
+}
+
+
+
+
+
+
+
+  
+  
+  
+  .dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu{
+    display: block;
+    margin-top: .125em;
+    /* margin-left: .125em; */
+  }
+  @media screen and (min-width:769px) {
+    .dropend:hover > .dropdown-menu{
+      position: absolute;
+      top: 0;
+      left: 115px;
+    }
+    .dropend .dropdown-toggle{
+      margin-left: .5em;
+    }
+  }

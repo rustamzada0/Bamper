@@ -1,0 +1,83 @@
+@media (min-width: 750px) and (max-width: 1108px) {
+    .user-profile-main-container {
+        max-width: 95%;
+        margin-right: 0px;
+    }
+
+    .user-profile p {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 525px) and (max-width: 749px) {
+    .user-profile-main-container {
+        max-width: 95%;
+        /* margin-right: 40px; */
+        margin-left: auto;
+    }
+
+    .notification-profile {
+        right: 30px;
+    }
+
+    .user-profile p {
+        display: none;
+    }
+
+    /* nav {
+        display: none;
+    } */
+}
+
+@media (min-width: 250px) and (max-width: 524px) {
+    #profile {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .user-profile-main-container {
+        max-width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #asideBar {
+        width: 100%;
+        /* display: none; */
+        position: fixed;
+        left: -100%;
+        transition: left 0.3s;
+        z-index: 1;
+    }
+
+    #resp-logo {
+        display: block;
+    }
+
+    #bars {
+        display: block;
+        z-index: 2;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px;
+    }
+
+    .navbar-main-container {
+        padding-top: 5px;
+    }
+
+    .info {
+        max-width: 260px;
+        gap: 40px;
+    }
+
+    .info span {
+        font-size: 8px;
+    }
+
+    .info-value p {
+        font-size: 8px;
+    }
+}

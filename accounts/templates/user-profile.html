@@ -1,0 +1,117 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoPart | UserProfile</title>
+    <link rel="stylesheet" href="{% static 'css/user-profile.css' %}">
+    <link rel="stylesheet" href="{% static 'css/user-profile-responsive.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <img id="resp-logo" src="./assets/imgs/blue-full-logo-2.png" alt="">
+    <div class="notification-profile">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="#616977" width="1.5em" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#000000}</style><path d="M224 0c-17.7 0-32 14.3-32 32V49.9C119.5 61.4 64 124.2 64 200v33.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416H424c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4V200c0-75.8-55.5-138.6-128-150.1V32c0-17.7-14.3-32-32-32zm0 96h8c57.4 0 104 46.6 104 104v33.4c0 47.9 13.9 94.6 39.7 134.6H72.3C98.1 328 112 281.3 112 233.4V200c0-57.4 46.6-104 104-104h8zm64 352H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#616977}</style><path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"/></svg>
+        <svg id="bars" xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#616977}</style><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+    </div>
+    <main>
+ 
+        <nav id="asideBar" class="sidebar">
+          <div class="navbar-main-container">
+                <div class="navbar">
+                    <div class="user-profile">
+                        <div class="profile">
+                            <span>RM</span>
+                        </div>
+                        <p>Rahim Mammadov</p>
+                    </div>
+                    <div class="overview">
+                        <span>OverView</span>
+                        <ul>
+                            <li><a href="#">Dashboard</a></li>
+                            <li><a href="#">Inbox</a></li>
+                            <li><a href="#">AI Assistant</a></li>
+                            <li><a href="#">Requests</a></li>
+                            <li><a href="#">Bookings</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <img id="logo" src="./assets/imgs/smallblue.png" alt="">
+            </div>
+        </nav>
+            <div id="profile">
+                <div class="user-profile-main-container">
+                    <div class="profile-letter">
+                        <div class="online"></div>
+                        <button id="choose-image-button">
+                            <img id="profile-image" src="default-profile-image.jpg">
+                        <input type="file" id="image-upload" style="display: none;">
+                        </button>
+                    </div>
+                    <h4>Rahim Mammadov</h4>
+                </div>
+
+                <div style="text-align: start; padding-left: 20px; padding-right: 20px;" class="user-profile-main-container">
+                    <div class="profile-info">
+                        <div class="info-svg">
+                            <h3>Profile Information</h3>
+                            <svg id="edit-button" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15.4134 1.75812L14.2412 0.585938C13.8509 0.195312 13.339 0 12.8271 0C12.3152 0 11.8034 0.195312 11.4127 0.585625L9.29181 2.70688L8.05462 1.46969C7.5665 0.981562 6.77494 0.981562 6.28712 1.46969L2.57494 5.18156C2.37962 5.37687 2.37962 5.69344 2.57494 5.88844L2.92837 6.24188C3.12369 6.43719 3.44025 6.43719 3.63525 6.24188L7.17087 2.70688L8.2315 3.7675L7.99962 3.99938L2.93525 9.06344C1.29467 10.7041 0.26115 12.8541 0.00462398 15.16L0.00368648 15.1672C-0.046001 15.6163 0.308062 16 0.747749 16C0.775562 16 0.803374 15.9984 0.831811 15.9953C3.14056 15.7402 5.29357 14.7064 6.93619 13.0641L11.9999 8L13.0856 6.91437L15.4134 4.58656C16.1946 3.80531 16.1946 2.53906 15.4134 1.75812ZM5.87525 12.0034C4.71837 13.1603 3.25056 13.9684 1.66462 14.3347C2.03087 12.7491 2.83931 11.2806 3.99587 10.1241L9.05994 5.06L9.29181 4.82812L11.1712 6.7075L10.9393 6.93937L5.87525 12.0034ZM14.3527 3.52562L12.2315 5.64687L10.7059 4.12094L10.3524 3.7675L12.4734 1.64656C12.6009 1.51906 12.7496 1.5 12.8268 1.5C12.904 1.5 13.0531 1.51906 13.1802 1.64656L14.3524 2.81875C14.4799 2.94625 14.499 3.095 14.499 3.17219C14.499 3.24938 14.4802 3.39844 14.3527 3.52562Z" fill="#000C37"></path></svg>
+                        </div>
+                        
+                        <div class="border"></div>
+                        <div class="info">
+                            <div class="info-name">
+                                <span>First Name</span>
+                                <span>Last Name</span>
+                                <span>E-mail</span>
+                                <span>Phone</span>
+                                <span>Country</span>
+                                <span>City</span>
+                                <span>Department</span>
+                                <span>Job title</span>
+                                <span>Language</span>
+                                <span>Profile ID</span>
+                            </div>
+                            <div id="data" class="info-value">
+                                <p id="inputUserNum1">Rahim</p>
+                                <p id="inputUserNum2">Mammadov</p>
+                                <p id="inputUserNum3">rehim.m04@gmail.com</p>
+                                <p id="inputUserNum4">+994708311033</p>
+                                <p id="inputUserNum5">Azerbaijan</p>
+                                <p id="inputUserNum6">Xirdalan</p>
+                                <p id="inputUserNum7">Men ne bilim</p>
+                                <p id="inputUserNum8">MERN Stack Developer</p>
+                                <p id="inputUserNum9">English</p>
+                                <p id="inputUserNum10">69316931</p>
+                            </div>
+                            <div class="info-edit" id="edit-form">
+                                <input type="text" id="newInputUserNum1">
+                                <input type="text" id="newInputUserNum2">
+                                <input type="text" id="newInputUserNum3">
+                                <input type="text" id="newInputUserNum4">
+                                <input type="text" id="newInputUserNum5">
+                                <input type="text" id="newInputUserNum6">
+                                <input type="text" id="newInputUserNum7">
+                                <input type="text" id="newInputUserNum8">
+                                <input type="text" id="newInputUserNum9">
+                                <input type="text" id="newInputUserNum10">
+                                <button class="saveBtn" id="save-button">Yadda saxla</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>          
+    </main>
+
+    <script src="./user-profile-script.js"></script>
+</body>
+</html>
+
+

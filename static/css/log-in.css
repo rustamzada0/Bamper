@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+}
+
+:root {
+  --blue: rgb(73, 133, 222);
+  --white: #fff;
+  --black: #333;
+  --grey: #e4e3e3;
+  --grey2: #8f8f8f;
+  --shadow: #929292;
+}
+
+#loginInputContainer,
+#loginSliderContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.autopart-logo {
+  width: 200px;
+}
+
+.login-center-text {
+  font-size: 40px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.welcome-back-text {
+  font-size: 20px;
+  color: var(--shadow);
+}
+
+.email-text-input {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.email-input,
+.password-input {
+  width: 420px;
+  height: 50px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  outline: none;
+  padding-left: 25px;
+  font-size: 15px;
+}
+
+.email-input{
+  padding-bottom: 3px;
+}
+
+.password-input{
+  padding-top: 5px;
+}
+
+.email-input::placeholder,
+.password-input::placeholder{
+  color: #b7b7b7;
+}
+
+.password-text-input {
+  padding-bottom: 5px;
+}
+
+.remember-me-or-forget-password {
+  width: 420px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.remember-me-or-forget-password a{
+  color: var(--grey2);
+  transition: 0.5s;
+}
+
+.remember-me-or-forget-password a:hover{
+  color: var(--blue);
+}
+
+.remember-me {
+  display: flex;
+  gap: 5px;
+}
+
+.remember-me input{
+  margin-top: -15px;
+}
+
+.login-button {
+  width: 420px;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  margin-top: 20px;
+  background-color: var(--blue);
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+#loginSliderContainer {
+  background-color: var(--blue);
+  height: 100vh;
+}
+
+/* ////////////////// slider ////////////////// */
+
+.slide-img{
+  width: 250px;
+  padding-bottom: 50px;
+
+} 
+
+.about-autopart{
+  width: 200px;
+}
+
+.slider-container {
+  width: 400px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: 1200px; 
+  transition: transform 0.5s;
+}
+
+.slide {
+  width: 400px;
+  height: 650px;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  color: var(--white);
+}
+
+.slide p, .slide h4{
+  width: 300px;
+}
+
+
+.controls {
+  margin-top: 10px;
+}
+
+.slide-button {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  
+}
+
+.controls{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+
+/* ////////////////////////////////////////////////////////// */

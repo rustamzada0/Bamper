@@ -1,0 +1,36 @@
+@media (min-width: 360px) and (max-width: 767px) {
+    #navbar {
+        background-color: white!important;
+    }
+    
+    .container-text{
+        padding-top: 100px;
+    }
+
+    .main-text{
+        margin-top: 0;
+
+    }
+
+    .content{
+        padding: 40px;
+        margin-top: -35px;
+        font-size: 15px;
+    }
+
+    .Driver-text {
+        padding: 30px;
+        margin-top: -40px;
+    }
+
+    .video{
+        /* padding: 35px; */
+        width: 85%;
+    }
+
+    .content-video {
+        padding: 40px;
+        font-size: 15px;
+    }
+
+}
