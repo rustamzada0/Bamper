@@ -3,5 +3,6 @@ Django==5.0.1
 django-jazzmin==2.6.0
 pillow==10.2.0
 psycopg==3.1.16
+six==1.16.0
 sqlparse==0.4.4
 typing_extensions==4.9.0
