@@ -20,6 +20,13 @@
 </head>
 
 <body>
+    {% if messages %}
+    <ul class="messages p-0 m-0 ">
+        {% for message in messages %}
+        <li{% if message.tags %} class="{{ message.tags }}"{% endif %} style="display:flex; justify-content: center; height: 30px; background-color: rgb(25, 158, 23); color: white; font-weight: bold; font-size: 15px; align-items: center;" >{{ message }}</li>
+        {% endfor %}
+    </ul>
+    {% endif %}
     <header>
         <div class="container-fluid">
             <div class="row">

@@ -1,5 +1,7 @@
 db.sqlite
 database
+db.sqlite3
+secrets.json
 .env
 .env.example
 .env.local

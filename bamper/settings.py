@@ -151,3 +151,15 @@ AUTH_USER_MODEL = 'accounts.User'
 # AUTHENTICATION_BACKENDS = [
 #     'django.contrib.auth.backends.AllowAllUsersModelBackend',
 # ]
+
+import json
+
+with open('secrets.json') as f:
+    secrets = json.load(f)
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_PORT = 587
+EMAIL_HOST_USER = secrets['EMAIL_HOST_USER']
+EMAIL_HOST_PASSWORD = secrets['EMAIL_HOST_PASSWORD']
